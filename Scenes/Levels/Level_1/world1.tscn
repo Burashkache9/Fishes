@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3 uid="uid://cha0b7svq5xbn"]
+
+[ext_resource type="Script" path="res://Scenes/World.gd" id="1_gtt4b"]
+[ext_resource type="PackedScene" uid="uid://b4uhg7tx6qe86" path="res://Scenes/Spawner/spawner.tscn" id="2_d2jwm"]
+[ext_resource type="PackedScene" uid="uid://c8pxuy6mhuhkk" path="res://Scenes/Spawner/Objects_to_spawn/Fishes/Fish 1/fish_1.tscn" id="3_tklr5"]
+[ext_resource type="PackedScene" uid="uid://bbxhmvj40jx87" path="res://Scenes/Levels/Level_1/level_1.tscn" id="4_jk0lf"]
+[ext_resource type="PackedScene" uid="uid://mhh7x6kc3tge" path="res://Scenes/Player/root_player.tscn" id="5_msfdl"]
+[ext_resource type="Script" path="res://Scenes/Levels/Level_1/finishShape2dareaCollision.gd" id="6_c1otv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1e77h"]
+size = Vector2(1082, 40)
+
+[node name="world1" type="Node2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_gtt4b")
+
+[node name="spawner" parent="." instance=ExtResource("2_d2jwm")]
+spawn_object = Array[PackedScene]([ExtResource("3_tklr5"), ExtResource("3_tklr5")])
+spawn_number = Array[int]([20, 20])
+spawn_position = Array[Vector2]([Vector2(0, 0), Vector2(0, 0)])
+size = 500
+
+[node name="Level_1" parent="." instance=ExtResource("4_jk0lf")]
+
+[node name="RootPlayer" parent="." instance=ExtResource("5_msfdl")]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1123, -100)
+shape = SubResource("RectangleShape2D_1e77h")
+script = ExtResource("6_c1otv")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 60.0
+offset_top = -126.0
+offset_right = 100.0
+offset_bottom = -86.0
+scale = Vector2(52.92, 1)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

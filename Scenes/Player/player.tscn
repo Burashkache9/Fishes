@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=3 uid="uid://0wlrjsgpeg6f"]
+
+[ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_3jnco"]
+[ext_resource type="PackedScene" uid="uid://c1a4b1tinaefp" path="res://Scenes/Player/rope.tscn" id="2_6fcx1"]
+[ext_resource type="Texture2D" uid="uid://da13pv1yy051j" path="res://Scenes/Player/Hook3.png" id="2_7mkub"]
+[ext_resource type="Script" path="res://Scenes/Player/Sprite2D.gd" id="3_lkthh"]
+[ext_resource type="PackedScene" uid="uid://d28y5pw2tviod" path="res://UI/ui.tscn" id="5_3h4ie"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f8skr"]
+radius = 69.1158
+
+[sub_resource type="Animation" id="Animation_q2vfm"]
+resource_name = "hook_animation"
+length = 1.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [1, 0, 1, 2]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cfx1j"]
+_data = {
+"hook_animation": SubResource("Animation_q2vfm")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jfl65"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_3jnco")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="UI" parent="Camera2D" instance=ExtResource("5_3h4ie")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_f8skr")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+position = Vector2(0, 52)
+texture = ExtResource("2_7mkub")
+vframes = 3
+frame = 1
+script = ExtResource("3_lkthh")
+
+[node name="hook_animation" type="AnimationPlayer" parent="CollisionShape2D/Sprite2D"]
+libraries = {
+"": SubResource("AnimationLibrary_cfx1j")
+}
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="CollisionShape2D"]
+scale = Vector2(7, 7)
+shape = SubResource("RectangleShape2D_jfl65")
+
+[node name="ROPE" parent="." instance=ExtResource("2_6fcx1")]
+character_path = NodePath("../CollisionShape2D")
+sprite_path = NodePath("../CollisionShape2D")
+
+[connection signal="pressed" from="CollisionShape2D/TouchScreenButton" to="." method="_on_touch_screen_button_pressed"]
+[connection signal="released" from="CollisionShape2D/TouchScreenButton" to="." method="_on_touch_screen_button_released"]

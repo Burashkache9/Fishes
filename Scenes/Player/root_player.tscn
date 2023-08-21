@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://di50rmm3d6d6u"]
+
+[ext_resource type="PackedScene" uid="uid://0wlrjsgpeg6f" path="res://Scenes/Player/player.tscn" id="2_0upoi"]
+
+[sub_resource type="GDScript" id="GDScript_jyjjt"]
+script/source = "extends CharacterBody2D
+
+#@export var zakidkaY = 10
+var zakidka: Vector2 = Vector2(0 , LS.player_zakidkaY*100 )
+#var zakidka: Vector2 = Vector2(0, 100*zakidkaY) # Задайте значение точки Zakidka в инспекторе
+
+var speed  = LS.player_speed # Скорость движения игрока
+
+var movingDown: bool = true
+func _process(delta):
+	if movingDown:
+		
+		# Движение вниз до точки Zakidka
+		velocity.y = speed* 4.5 # Используйте положительную скорость для движения вниз
+		move_and_slide()
+
+		if to_global(position).y >= to_global(zakidka).y:
+			movingDown = false
+	else:
+		# Движение вверх
+		velocity.y = -speed # Используйте от
+		move_and_slide()
+"
+
+[node name="RootPlayer" type="CharacterBody2D"]
+script = SubResource("GDScript_jyjjt")
+
+[node name="Player" parent="." instance=ExtResource("2_0upoi")]

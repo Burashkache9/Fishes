@@ -1,0 +1,6 @@
+res://Scenes/test_start_game.tscn
+res://Scenes/Spawner/spawner.gd
+res://Scenes/Player/player.tscn
+res://Scenes/Player/player.gd
+res://UI/ui.tscn
+res://UI/ui.gd

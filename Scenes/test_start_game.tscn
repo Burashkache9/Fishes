@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://juiutp6l8kx2"]
+
+[ext_resource type="PackedScene" uid="uid://c7x6tq4b4wl5n" path="res://Scenes/Levels/Level_1/level_1.tscn" id="2_3db8r"]
+[ext_resource type="PackedScene" uid="uid://0wlrjsgpeg6f" path="res://Scenes/Player/player.tscn" id="4_68ino"]
+[ext_resource type="PackedScene" uid="uid://nw34tyw007bi" path="res://Scenes/Spawner/spawner.tscn" id="4_ivpdi"]
+
+[node name="Test_start_game" type="Node2D"]
+
+[node name="Level_1" parent="." instance=ExtResource("2_3db8r")]
+
+[node name="spawner" parent="." instance=ExtResource("4_ivpdi")]
+spawn_number = Array[int]([10])
+
+[node name="Player" parent="." instance=ExtResource("4_68ino")]

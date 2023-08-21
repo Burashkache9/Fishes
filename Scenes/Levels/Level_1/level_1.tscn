@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://c7x6tq4b4wl5n"]
+
+[ext_resource type="Texture2D" uid="uid://b3lun218gq4n7" path="res://Scenes/Levels/Level_1/Левая скала2.png" id="1_bu7st"]
+[ext_resource type="Script" path="res://Scenes/Levels/Level_1/ParallaxLayer.gd" id="1_fd3c5"]
+[ext_resource type="Texture2D" uid="uid://dddu1lea6sp0h" path="res://Scenes/Levels/Level_1/Правая скала2.png" id="2_7gjl6"]
+[ext_resource type="Texture2D" uid="uid://cj5gxld7tcmkb" path="res://Scenes/Levels/Level_1/center0.png" id="3_efpfu"]
+[ext_resource type="PackedScene" path="res://Scenes/Levels/Level_1/glubina.tscn" id="5_4s580"]
+[ext_resource type="Texture2D" uid="uid://e4msec4krclp" path="res://Scenes/Levels/Level_1/center.png" id="5_6aly3"]
+
+[node name="Level_1" type="Node2D"]
+
+[node name="Glubina" parent="." instance=ExtResource("5_4s580")]
+position = Vector2(25, 0)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(310, 0)
+
+[node name="center1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(290, 2000)
+scale = Vector2(120, 2)
+texture = ExtResource("5_6aly3")
+
+[node name="center0" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2/center1"]
+texture = ExtResource("3_efpfu")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(0, 2100)
+script = ExtResource("1_fd3c5")
+
+[node name="right" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("2_7gjl6")
+
+[node name="left" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("1_bu7st")

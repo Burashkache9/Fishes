@@ -1,0 +1,343 @@
+[gd_scene load_steps=4 format=3 uid="uid://4w83yaqgcox5"]
+
+[ext_resource type="Script" path="res://Scenes/Levels/Level_1/glubina.gd" id="1_4cc1m"]
+[ext_resource type="Texture2D" uid="uid://cgavu3neskidb" path="res://Scenes/Levels/Level_1/Glubina.png" id="1_y0u38"]
+[ext_resource type="Script" path="res://Scenes/Levels/Level_1/Label.gd" id="2_okxe2"]
+
+[node name="Glubina" type="Node2D"]
+script = ExtResource("1_4cc1m")
+
+[node name="1" type="Sprite2D" parent="."]
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="1"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="5" type="Sprite2D" parent="."]
+position = Vector2(0, 500)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="5"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="10" type="Sprite2D" parent="."]
+position = Vector2(0, 1000)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="10"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="15" type="Sprite2D" parent="."]
+position = Vector2(0, 1500)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="15"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="20" type="Sprite2D" parent="."]
+position = Vector2(0, 2000)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="20"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="25" type="Sprite2D" parent="."]
+position = Vector2(0, 2500)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="25"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="30" type="Sprite2D" parent="."]
+position = Vector2(0, 3000)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="30"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="35" type="Sprite2D" parent="."]
+position = Vector2(0, 3500)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="35"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="40" type="Sprite2D" parent="."]
+position = Vector2(0, 4000)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="40"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="45" type="Sprite2D" parent="."]
+position = Vector2(0, 4500)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="45"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="50" type="Sprite2D" parent="."]
+position = Vector2(0, 5000)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="50"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="55" type="Sprite2D" parent="."]
+position = Vector2(0, 5500)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="55"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="60" type="Sprite2D" parent="."]
+position = Vector2(0, 6000)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="60"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="65" type="Sprite2D" parent="."]
+position = Vector2(0, 6500)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="65"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="70" type="Sprite2D" parent="."]
+position = Vector2(0, 7000)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="70"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")
+
+[node name="75" type="Sprite2D" parent="."]
+position = Vector2(0, 7500)
+texture = ExtResource("1_y0u38")
+
+[node name="Label" type="Label" parent="75"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -134.0
+offset_right = -50.0
+offset_bottom = -62.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "0"
+vertical_alignment = 1
+script = ExtResource("2_okxe2")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://nw34tyw007bi"]
+
+[ext_resource type="Script" path="res://Scenes/Spawner/spawner.gd" id="1_jpcyt"]
+[ext_resource type="PackedScene" uid="uid://xcovwpmcmvi5" path="res://Scenes/Spawner/Objects_to_spawn/Fishes/Fish 1/fish_1.tscn" id="2_uxuvg"]
+
+[node name="spawner" type="Node2D"]
+script = ExtResource("1_jpcyt")
+spawn_object = Array[PackedScene]([ExtResource("2_uxuvg")])
+spawn_position = Array[Vector2]([Vector2(1, 1)])
+size = 1
