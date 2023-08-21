@@ -1,53 +1,54 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1692650141
+::res://::1692653332
 icon.svg::CompressedTexture2D::3228886686529452403::1692650129::1692650129::1::::<><>::
 icon_alt.png::CompressedTexture2D::5900940566065457053::1692650129::1692650129::1::::<><>::
-::res://Scenes/::1692650129
-test_start_game.tscn::PackedScene::673509622183942825::1692650129::0::1::::<><>::uid://c7x6tq4b4wl5n::::res://Scenes/Levels/Level_1/level_1.tscn<>uid://0wlrjsgpeg6f::::res://Scenes/Player/player.tscn<>uid://nw34tyw007bi::::res://Scenes/Spawner/spawner.tscn
+README.md::TextFile::-1::1692652840::0::1::::<><>::
+::res://Scenes/::1692651359
+test_start_game.tscn::PackedScene::673509622183942825::1692651359::0::1::::<><>::uid://c7x6tq4b4wl5n::::res://Scenes/Levels/Level_1/level_1.tscn<>uid://0wlrjsgpeg6f::::res://Scenes/Player/player.tscn<>uid://nw34tyw007bi::::res://Scenes/Spawner/spawner.tscn
 ::res://Scenes/Levels/::1692650129
-::res://Scenes/Levels/Level_1/::1692650129
+::res://Scenes/Levels/Level_1/::1692650142
 center0.png::CompressedTexture2D::5466878251837379845::1692650129::1692650129::1::::<><>::
 center.png::CompressedTexture2D::341383292138019669::1692650129::1692650129::1::::<><>::
 finishShape2dareaCollision.gd::GDScript::-1::1692650129::0::1::::<>CollisionShape2D<>::
 glubina.gd::GDScript::-1::1692650129::0::1::::<>Node2D<>::
 Glubina.png::CompressedTexture2D::5195286692883049655::1692650129::1692650129::1::::<><>::
-glubina.tscn::PackedScene::2082947700378368468::1692650129::0::1::::<><>::res://Scenes/Levels/Level_1/glubina.gd<>uid://cgavu3neskidb::::res://Scenes/Levels/Level_1/Glubina.png<>res://Scenes/Levels/Level_1/Label.gd
+glubina.tscn::PackedScene::2082947700378368468::1692650129::0::1::::<><>::res://Scenes/Levels/Level_1/glubina.gd<>uid://cgavu3neskidb
 Label.gd::GDScript::-1::1692650129::0::1::::<>Label<>::
-level_1.tscn::PackedScene::7068282094264564629::1692650129::0::1::::<><>::uid://b3lun218gq4n7::::res://Scenes/Levels/Level_1/Левая скала2.png<>res://Scenes/Levels/Level_1/ParallaxLayer.gd<>uid://dddu1lea6sp0h::::res://Scenes/Levels/Level_1/Правая скала2.png<>uid://cj5gxld7tcmkb::::res://Scenes/Levels/Level_1/center0.png<>res://Scenes/Levels/Level_1/glubina.tscn<>uid://e4msec4krclp::::res://Scenes/Levels/Level_1/center.png
+level_1.tscn::PackedScene::7068282094264564629::1692650129::0::1::::<><>::uid://b3lun218gq4n7
 ParallaxLayer2.gd::GDScript::-1::1692650129::0::1::::<>Node2D<>::
 ParallaxLayer3.gd::GDScript::-1::1692650129::0::1::::<>ParallaxLayer<>::
 ParallaxLayer.gd::GDScript::-1::1692650129::0::1::::<>ParallaxLayer<>::
-world1.tscn::PackedScene::5265684692995910427::1692650129::0::1::::<><>::res://Scenes/World.gd<>uid://b4uhg7tx6qe86::::res://Scenes/Spawner/spawner.tscn<>uid://c8pxuy6mhuhkk::::res://Scenes/Spawner/Objects_to_spawn/Fishes/Fish 1/fish_1.tscn<>uid://bbxhmvj40jx87::::res://Scenes/Levels/Level_1/level_1.tscn<>uid://mhh7x6kc3tge::::res://Scenes/Player/root_player.tscn<>res://Scenes/Levels/Level_1/finishShape2dareaCollision.gd
+world1.tscn::PackedScene::5265684692995910427::1692650129::0::1::::<><>::res://Scenes/World.gd<>uid://b4uhg7tx6qe86
 World.gd::GDScript::-1::1692650129::0::1::::<>Node2D<>::
 �ࠢ��᪠��2.png::CompressedTexture2D::7377283069730657557::1692650129::1692650142::1::::<><>::
 �����᪠��2.png::CompressedTexture2D::4375655475832176846::1692650129::1692650142::1::::<><>::
-::res://Scenes/Player/::1692650129
+::res://Scenes/Player/::1692652390
 Hook3.png::CompressedTexture2D::7214663879669700029::1692650129::1692650129::1::::<><>::
-player.gd::GDScript::-1::1692650129::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1800836147766392587::1692650129::0::1::::<><>::res://Scenes/Player/player.gd<>uid://c1a4b1tinaefp::::res://Scenes/Player/rope.tscn<>uid://da13pv1yy051j::::res://Scenes/Player/Hook3.png<>res://Scenes/Player/Sprite2D.gd<>uid://d28y5pw2tviod::::res://UI/ui.tscn
-root_player.tscn::PackedScene::7784253066216178918::1692650129::0::1::::<><>::uid://0wlrjsgpeg6f::::res://Scenes/Player/player.tscn
+player.gd::GDScript::-1::1692650998::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1800836147766392587::1692652389::0::1::::<><>::res://Scenes/Player/player.gd<>uid://c1a4b1tinaefp::::res://Scenes/Player/rope.tscn<>uid://da13pv1yy051j::::res://Scenes/Player/Hook3.png<>res://Scenes/Player/Sprite2D.gd<>uid://d28y5pw2tviod::::res://UI/ui.tscn
+root_player.tscn::PackedScene::7784253066216178918::1692650129::0::1::::<><>::uid://0wlrjsgpeg6f
 ROPE.gd::GDScript::-1::1692650129::0::1::::<>Line2D<>::
 rope.tscn::PackedScene::6599515275898424665::1692650129::0::1::::<><>::res://Scenes/Player/ROPE.gd
 Sprite2D.gd::GDScript::-1::1692650129::0::1::::<>Sprite2D<>::
-::res://Scenes/Spawner/::1692650129
-spawner.gd::GDScript::-1::1692650129::0::1::::<>Node2D<>::
-spawner.tscn::PackedScene::959624177757405122::1692650129::0::1::::<><>::res://Scenes/Spawner/spawner.gd<>uid://xcovwpmcmvi5::::res://Scenes/Spawner/Objects_to_spawn/Fishes/Fish 1/fish_1.tscn
+::res://Scenes/Spawner/::1692650151
+spawner.gd::GDScript::-1::1692650151::0::1::::<>Node2D<>::
+spawner.tscn::PackedScene::959624177757405122::1692650129::0::1::::<><>::res://Scenes/Spawner/spawner.gd<>uid://xcovwpmcmvi5
 ::res://Scenes/Spawner/Objects_to_spawn/::1692650129
 ::res://Scenes/Spawner/Objects_to_spawn/Fishes/::1692650129
 ::res://Scenes/Spawner/Objects_to_spawn/Fishes/Fish 1/::1692650129
 fish_1.gd::GDScript::-1::1692650129::0::1::::<>CharacterBody2D<>::
-fish_1.tscn::PackedScene::1619360877987761090::1692650129::0::1::::<><>::res://Scenes/Spawner/Objects_to_spawn/Fishes/Fish 1/fish_1.gd<>uid://cku5why7fkm7p::::res://Scenes/Spawner/Objects_to_spawn/Fishes/Fish 1/yellow_swim.png
+fish_1.tscn::PackedScene::1619360877987761090::1692650129::0::1::::<><>::res://Scenes/Spawner/Objects_to_spawn/Fishes/Fish 1/fish_1.gd<>uid://cku5why7fkm7p
 yellow_swim.png::CompressedTexture2D::5517878562296403359::1692650129::1692650129::1::::<><>::
 ::res://Scripts/::1692650129
 ::res://Scripts/Global/::1692650129
 LS.gd::GDScript::-1::1692650129::0::1::::<>Node<>::
 user_interface.gd::GDScript::-1::1692650129::0::1::::<>Control<>::
-::res://UI/::1692650129
-control.tscn::PackedScene::1833936256151302153::1692650129::0::1::::<><>::uid://6mmy41315r53::::res://UI/shop.tscn
+::res://UI/::1692651360
+control.tscn::PackedScene::1833936256151302153::1692650129::0::1::::<><>::uid://6mmy41315r53
 items.gd::GDScript::-1::1692650129::0::1::::<>Node<>::
 level.tscn::PackedScene::5839828230033528675::1692650129::0::1::::<><>::res://node_2d.gd<>res://UI/Shop_buttons.gd
 node_2d.gd::GDScript::-1::1692650129::0::1::::<>Control<>::
 shop.tscn::PackedScene::2201399713444841708::1692650129::0::1::::<><>::
 Shop_buttons.gd::GDScript::-1::1692650129::0::1::::<>Button<>::
-ui.gd::GDScript::-1::1692650129::0::1::::<>Control<>::
-ui.tscn::PackedScene::9123996899922623415::1692650129::0::1::::<><>::res://UI/ui.gd
+ui.gd::GDScript::-1::1692651319::0::1::::<>Control<>::
+ui.tscn::PackedScene::9123996899922623415::1692651360::0::1::::<><>::res://UI/ui.gd
